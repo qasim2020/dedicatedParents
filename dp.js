@@ -15,12 +15,8 @@ const server = http.createServer((req, res) => {
 
   switch (req.url) {
     case '/':
-      targetUrl = 'http://localhost:3000/dedicated_parents/gen/page/landingPage/n';
+      targetUrl = 'http://localhost:3000/7am/gen/page/landingPage/n';
       break;
-    // case '/some_other_path':
-    //   targetUrl = 'http://localhost:3000/other_endpoint';
-    //   break;
-    // // Add more cases as needed
     default:
        targetUrl = `http://localhost:3000${req.url}`;
        break;
